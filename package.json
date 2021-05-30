@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Uploads an image",
   "main": "index.js",
+  "engines": {
+    "node": "12.10.0",
+    "yarn": "1.19.1"
+  },
   "scripts": {
     "run:test": "mocha tests/tests/*.js --require esm --exit",
     "test": "cross-env NODE_ENV=test sh ./server/bash/test.sh",
