@@ -1,0 +1,56 @@
+
+.dashboard {
+    min-height: 100vh;
+    .header {
+        padding-top: 8rem;
+    }
+  .dashboard-wrapper {
+    padding: 1rem 1rem 2rem;
+    margin: 3rem 10% 0px 10%;
+    .lead-content{
+        margin-top: 4rem;
+        border: 2px #493f3f3d solid;
+        min-height: 500px;
+        box-shadow: 0 0.9rem 0.9rem 0 rgba(0, 0, 0, 0.05);
+        background-color: #dbedff;
+        .lead-subject {
+            padding-top: 2rem;
+
+        }
+    
+        .lead-body {
+            margin-top: 1rem;
+            padding: 1rem;
+            justify-content: justify;
+    
+        }
+    }
+    .decision-btn {
+        box-shadow: 0 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.05);
+        color:black;
+        background-color: #dbedff;
+        border: .5px #493f3f3d solid;
+        border-radius: 18%;
+
+    }
+
+  }
+  .file-drop {
+    margin: 0px 20% 0px 20%;
+    box-shadow: 0 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+  }
+
+  .card-container{
+    margin: 0px 2% 0 2%;
+  .card img{
+    height: 200px;
+    width: 100%;
+    background-color: white;
+  }
+  .card img:hover{
+    height: 205px;
+    cursor: pointer;
+  }
+}
+}
