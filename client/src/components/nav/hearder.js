@@ -16,12 +16,10 @@ const Header = () => {
 
   return (
 <div className="">
-    { user
-      ? (<ul id="dropdown1" className="dropdown-content">
-      <li className="divider"></li>
-      <li><a onClick={() => logoutUser()} href="#!">Logout</a></li>
-    </ul>)
-      : <ul></ul>}
+      <ul id="dropdown1" className="dropdown-content">
+      { user ? <li className="divider"></li> : <li/> }
+      { user ? <li><a onClick={() => logoutUser()} href="#!">Logout</a></li> : <li/> }
+    </ul>
 
     <nav className="nav nav-fixed-bar white">
         <div className="nav-wrapper">
@@ -38,14 +36,17 @@ const Header = () => {
                     <Link to="/register">Signup</Link>
                 </li>)}
                 <li><a href="##">{user?.user.email}</a></li>
-                { user
-                  ? <li><a className="dropdown-trigger" href="#!" data-target="dropdown1">
-                    <div className="row">
+
+                  <li>
+                    <a className="dropdown-trigger" href="#!" data-target="dropdown1">
+                  { user
+                    ? (<div className="row">
                     <i className="col material-icons icon-menu-fix">person</i>
                     <i className="col material-icons icon-menu-fix">arrow_drop_down</i>
-                    </div></a>
+                    </div>)
+                    : <div/>}
+                    </a>
                 </li>
-                  : <li></li>}
             </ul>
         </div>
     </nav>
