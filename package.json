@@ -1,0 +1,70 @@
+{
+  "name": "user-image-upload",
+  "version": "1.0.0",
+  "description": "Uploads an image",
+  "main": "index.js",
+  "engines": {
+    "node": "12.10.0",
+    "yarn": "1.22.10"
+  },
+  "scripts": {
+    "run:test": "mocha tests/tests/*.js --require esm --exit",
+    "test": "cross-env NODE_ENV=test sh ./server/bash/test.sh",
+    "start": "babel-node server.js",
+    "start:dev": "nodemon --exec babel-node server.js",
+    "migrate": "./node_modules/.bin/sequelize-cli db:migrate",
+    "postinstall": "cd client && yarn install && yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenware/user-image-upload.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenware/user-image-upload/issues"
+  },
+  "homepage": "https://github.com/kenware/user-image-upload#readme",
+  "dependencies": {
+    "aws": "0.0.3-2",
+    "aws-sdk": "^2.918.0",
+    "babel-core": "^6.26.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^8.4.0",
+    "moment": "^2.29.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.6.0",
+    "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0",
+    "sinon": "^11.1.1",
+    "uuid": "^8.3.2",
+    "validatorjs": "^3.22.1",
+    "winston": "^3.3.3",
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.13.13",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/register": "^7.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^1.7.0"
+  }
+}
