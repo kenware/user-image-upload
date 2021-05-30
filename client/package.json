@@ -2,13 +2,16 @@
   "name": "lead-processor-client",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "12.10.0",
+    "yarn": "1.19.1"
+  },
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
-    "chai": "^4.3.4",
     "history": "^5.0.0",
     "lodash": "^4.17.21",
     "materialize-css": "^1.0.0",
