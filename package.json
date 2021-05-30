@@ -5,7 +5,7 @@
   "main": "index.js",
   "engines": {
     "node": "12.10.0",
-    "yarn": "1.19.1"
+    "yarn": "1.22.10"
   },
   "scripts": {
     "run:test": "mocha tests/tests/*.js --require esm --exit",
